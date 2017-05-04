@@ -1,0 +1,9 @@
+Developer Strategies :
+1. Use indexes[0 to array.length] when ever possible instead of data[-infinite- to +infinite].
+2. Data processing -> eliminate un necessary reads.
+TODO:
+#. How to formulate Algorithms.
+1. State Maintainence
+2. CodeStyle => Patterns+modularity+formatters
+3. Synchronous vs Asynchronous Programming [JS]
+4. Callbacks and promisses.
