@@ -1,0 +1,22 @@
+Problem : Largest area in histogram
+Input : Array of histogram heights
+Output : MaxSize
+
+Algorithm :
+~~~~~~~~~~
+1. Need an empty stack to save indexes.
+2.  Iterate till end of array
+	a. If histogram[index]>=histogram[indexesStack_top]? push index into stack
+	b. else pop the index stack till histogram[index]>=histogram[indexesStack_top] 
+		i) While popping do the following calculation for each index in stack:
+		function calculateMax(){
+        	 indexPopped = indexStack.pop();
+	    	if(indexStack_isEmpty)
+			   size = histogram[indexPopped]*index
+			else
+			   size = histogram[indexPopped]*(index-indexStack_top-1)
+			maxSize = max(size,maxSize)
+		}
+3. Once done a single iteration-> apply calculateMax on each element.
+4. return maxSize
+
